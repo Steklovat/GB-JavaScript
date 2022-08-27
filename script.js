@@ -1,19 +1,101 @@
-alert('Сейчас будет ответ на первое практическое задание')
-let tempCel = +prompt('Введите значение в градусах по Цельсию', 100);
-let tempFar = (9 / 5) * tempCel + 32;
-alert("Температура в фаренгейтах: " + tempFar);
+alert('Первый вопрос');
+alert('Если ++ стоит перед переменной, то сначала к единица прибавляется а потом выводит результат, если ++ стоит после переменной, то сначала выведет переменную, а потом прибавит');
 
 
-alert('Сейчас будет отет на второе задание');
+alert('Второй вопрос')
+var value_a = 2;
+var x = 1 + (value_a *= 2);
+alert(`Значение Х = ${x}`);
 
-let admin, name;
-admin = name = "Василий"
-alert(admin);
+alert('Третий вопрос')
+let num1, num2;
+num1 = 2;
+num2 = 3;
+if (num1 >= 0 || num2 >= 0) {
+    alert(num1 - num2)
+}
+if (num1 < 0 || num2 < 0) {
+    alert(num1 * num2)
+}
+if (num1 >= 0 || num2 < 0 && num1 < 0 || num2 > 0) {
+    alert(num1 + num2)
+}
 
-alert('Сейчас будет отет на третье задание');
+alert('Четвертый вопрос')
+let a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
+switch (0) {
+    case 0:
+        console.log('0')
+    case 1:
+        console.log('1')
+    case 2:
+        console.log('2')
+    case 3:
+        console.log('3')
+    case 4:
+        console.log('4')
+    case 5:
+        console.log('5')
+    case 6:
+        console.log('6')
+    case 7:
+        console.log('7')
+    case 8:
+        console.log('8')
+    case 9:
+        console.log('9')
+    case 10:
+        console.log('10')
+    case 11:
+        console.log('11')
+    case 12:
+        console.log('12')
+    case 13:
+        console.log('13')
+    case 14:
+        console.log('14')
+    case 15:
+        console.log('15')
+        break;
 
-alert('1000 + 108 в JS будет равно 1000108');
+}
 
-alert('Сейчас будет отет на четвертое задание');
+alert('Пятый вопрос')
+function addit(a, b) {
+    return a + b;
+}
+function sub(a, b) {
+    return a - b;
+}
+function multi(a, b) {
+    return a * b;
+}
+function div(a, b) {
+    return a / b;
+}
 
-alert('тэг defer позволяет странице полностью загрузиться обрабатывая скрипты в фоновом режиме\nтэг async делает скрипты независимыми друг от друга, что быстрее загрузилось, то и загрузилось =)');
+
+console.log(addit(2, 2))
+console.log(sub(2, 2))
+console.log(multi(2, 2))
+console.log(div(2, 2))
+
+alert('Шестой вопрос')
+function mathOperation(arg1, arg2, operation) {
+
+    switch (operation) {
+        case (addit):
+            return arg1 + arg2;
+            break;
+        case (sub):
+            return arg1 - arg2;
+            break;
+        case (multi):
+            return arg1 * arg2;
+            break;
+        case (div):
+            return arg1 / arg2;
+            break;
+    }
+}
+console.log(mathOperation(2, 2, div));
