@@ -1,103 +1,48 @@
-// // alert('Первый вопрос');
-// // alert('Если ++ стоит перед переменной, то сначала к единица прибавляется а потом выводит результат, если ++ стоит после переменной, то сначала выведет переменную, а потом прибавит');
+// function countBasketPrice (arr) {
+//     let sum = 0;
 
-
-// // alert('Второй вопрос')
-// // var value_a = 2;
-// // var x = 1 + (value_a *= 2);
-// // alert(`Значение Х = ${x}`);
-
-// // alert('Третий вопрос')
-// // let num1, num2;
-// // num1 = 2;
-// // num2 = 3;
-// // if (num1 >= 0 || num2 >= 0) {
-// //     alert(num1 - num2)
-// // }
-// // if (num1 < 0 || num2 < 0) {
-// //     alert(num1 * num2)
-// // }
-// // if (num1 >= 0 || num2 < 0 && num1 < 0 || num2 > 0) {
-// //     alert(num1 + num2)
-// // }
-
-// // alert('Четвертый вопрос')
-// // let a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15];
-// // switch (0) {
-// //     case 0:
-// //         console.log('0')
-// //     case 1:
-// //         console.log('1')
-// //     case 2:
-// //         console.log('2')
-// //     case 3:
-// //         console.log('3')
-// //     case 4:
-// //         console.log('4')
-// //     case 5:
-// //         console.log('5')
-// //     case 6:
-// //         console.log('6')
-// //     case 7:
-// //         console.log('7')
-// //     case 8:
-// //         console.log('8')
-// //     case 9:
-// //         console.log('9')
-// //     case 10:
-// //         console.log('10')
-// //     case 11:
-// //         console.log('11')
-// //     case 12:
-// //         console.log('12')
-// //     case 13:
-// //         console.log('13')
-// //     case 14:
-// //         console.log('14')
-// //     case 15:
-// //         console.log('15')
-// //         break;
-
-// // }
-
-// alert('Пятый вопрос')
-// let a, b;
-// function addit(a, b) {
-//     return a + b;
-// }
-// function sub(a, b) {
-//     return a - b;
-// }
-// function multi(a, b) {
-//     return a * b;
-// }
-// function div(a, b) {
-//     return a / b;
-// }
-
-
-// console.log(addit(2, 2))
-// console.log(sub(2, 2))
-// console.log(multi(2, 2))
-// console.log(div(2, 2))
-
-// alert('Шестой вопрос')
-// function mathOperation(a, b, operation) {
-
-
-//     switch (operation) {
-//         case (addit):
-//             addit(a, b)
-//             break;
-//         case (sub):
-//             sub(a, b)
-//             break;
-//         case (multi):
-//             multi(a, b)
-//             break;
-//         case (div):
-//             div(a, b);
-//             break;
+//     for(let i = 0; i < arr.length; i++) {
+        
+//         sum += arr[i].price * arr[i].count;
 //     }
+//     return sum;
+    
+    
 // }
-// console.log(mathOperation(2, 2, div));
+
+// let productID_0 = {productName:'тапочки', type:1, price:1250,  count:2};
+// let productID_1 = {productName:'носки', type:2, price:2250, count:1};
+// let productID_2 = {productName:'шапка', type:6, price:1750, count:3};
+
+// let basket = [];
+
+// basket.push(productID_0);
+// basket.push(productID_1);
+// basket.push(productID_2);
+
+// alert('Сумма товаров в корзине: ' + countBasketPrice(basket));
+
+
+
+// let number;
+// let object = {};
+// function splitNumber() {
+// number = prompt('Введите любое число от 0 до 999 в трехзначном формате', '000');
+// while (number == '' || isNaN(number)) {
+// number = prompt('Введите любое число от 0 до 999 в трехзначном формате', '000');
+// }
+//  if (number > 999) {
+// alert('Число не может превышать значения 999!');
+// console.log(object);
+// } else {
+// object = number.split();
+// object.hundreds = number[0];
+// object.dozens = number[1];
+// object.units = number[2];
+// alert (`Число   ${object}   включает в себя:
+// - сотни:   ${object.hundreds} 
+// - десятки:   ${object.dozens}  
+// - единицы:   ${object.units} `);
+// }
+// }
+// splitNumber();
